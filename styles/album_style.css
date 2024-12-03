@@ -18,6 +18,7 @@
     grid-area: cover_album_1;
     background-image: url("../images/Ale2.jpeg");
     filter: brightness(.8);
+    background-position: bottom;
 }
 
 .cover_album_2 h1 {
@@ -219,4 +220,23 @@
 
 .album_bg {
     filter: brightness(.7);
+}
+
+
+
+@media (max-width: 900px) {
+    .memorie_cont {
+        flex-direction: column !important;
+        text-align: left;
+    }
+    .cover_album {
+        transform: translateY(-61px);
+        display: grid;
+        grid-template-areas:
+            "cover_album_1"
+            "cover_album_2"
+            "cover_album_3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 2fr 1fr;
+    }
 }

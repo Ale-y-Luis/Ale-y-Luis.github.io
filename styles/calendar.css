@@ -1,0 +1,71 @@
+body {
+    background-image: url("../images/Ale2.jpeg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#calendarContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Contenedor individual de cada calendario */
+.calendar-wrapper {
+    min-width: 300px;
+    max-width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000cc;
+    border-radius: 10px;
+    padding: 60px 30px;
+    color: #f5f5f7;
+}
+
+.calendar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.day-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columnas para los 7 días */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.day-header div {
+    padding: 5px;
+    text-align: center;
+    background-color: #333;
+    margin: 5px;
+}
+
+.calendar .day {
+    display: inline-block;
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #333;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.calendar .day:empty {
+    background-color: #f0f0f0;
+}
+
+.event {
+    background-color: #f5f5f7;
+    color: #111;
+    margin-top: 5px;
+    padding: 3px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+}

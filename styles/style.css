@@ -120,7 +120,7 @@ nav {
 
 .nav_item_inicio a:hover {
     background-color: #ffc1d5;
-    color: #fff;
+    color: #bb4067;
     transform: translateY(-3px);
 }
 
@@ -152,4 +152,48 @@ nav {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+
+/*Stardust*/
+
+.stardust::before, .stardust::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #fff, transparent);
+    border-radius: 50%;
+    opacity: 0;
+    animation: starburst 1s infinite ease-out;
+    pointer-events: none;
+}
+
+.stardust::before {
+    animation-delay: 0s;
+    animation-duration: 1s;
+    transform-origin: 10px 10px;
+}
+
+.stardust::after {
+    animation-delay: 0.5s;
+    animation-duration: 1.2s;
+    transform-origin: -10px -10px;
+}
+
+@keyframes starburst {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0.3);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(2);
+    }
 }
