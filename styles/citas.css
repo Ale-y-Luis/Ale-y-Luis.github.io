@@ -1,0 +1,94 @@
+body {
+    height: 100vh !important;
+    overflow: hidden;
+}
+
+.main_cita {
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        "cita_section cita_img";
+    grid-template-columns: 2fr 3fr;
+    transform: translateY(-61px);
+}
+
+.cita_section {
+    grid-area: cita_section;
+    padding: 40px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #111;
+}
+
+.cita_aleatoria {
+    display: none;
+}
+
+.cita_img {
+    grid-area: cita_img;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(.7);
+}
+
+.cita_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+#cita_aleatoria {
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #ffc1d5;
+}
+
+#boton_cita {
+    background: #f5f5f7;
+    padding: 10px 30px;
+    font-size: 2rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: #999 0 5px;
+    transition: .2s ease;
+}
+
+#boton_cita:hover {
+    background-color: #ffc1d5;
+}
+
+#boton_cita:active {
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    body {
+        overflow: scroll;
+    }
+    .main_cita {
+        display: grid;
+        grid-template-areas:
+            "cita_img"
+            "cita_section";
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        transform: translateY(-61px);
+    }
+    .cita_img {
+        height: 100%;
+    }
+}

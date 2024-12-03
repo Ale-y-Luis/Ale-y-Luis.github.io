@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.75;
+}
+
+header {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.layout_80 {
+    margin: 0 10%;
+    height: fit-content;
+}
+
+.inicio {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg_image_inicio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: bottom;
+    filter: brightness(.7);
+    z-index: -1;
+}
+
+.fixed_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.general {
+    background-color: #D6AB9F;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 30px 0;
+    z-index: 10;
+}
+
+.nav_left, .nav_right {
+    display: flex;
+    width: 400px;
+}
+.nav_left {
+    justify-content: end;
+}
+
+.nav_inicio {
+    background-image: linear-gradient(to bottom, #000000aa 10%, #00000000);
+}
+
+.nav_item a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav_item a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #f5f5f7;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav_item a:hover {
+    color: #f5f5f7;
+}
+
+.nav_item a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav_item_inicio a {
+    font-size: 18px;
+    color: #1d1d1f;
+    margin: 0 10px;
+    background-color: #f5f5f7;
+    padding: 10px 20px 15px 20px;
+    border-radius: 0 0 50% 50%;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.nav_item_inicio a:hover {
+    background-color: #ffc1d5;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.main_inicio {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.centro_inicio {
+    position: relative;
+    min-width: 40%;
+    max-width: 80%;
+    padding: 30px 50px;
+    background: #000000cc;
+    transform: translateY(-61px);
+}
+
+.frase_inicio {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    font-style: italic;
+    color: #ffc1d5;
+    text-align: center;
+}
+
+.great_vibes_regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}

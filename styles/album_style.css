@@ -1,0 +1,222 @@
+.cover_album {
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-61px);
+    display: grid;
+    grid-template-areas:
+        "cover_album_1 cover_album_2"
+        "cover_album_1 cover_album_3";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.cover_album_1, .cover_album_2, .cover_album_3{
+    object-fit: cover;
+}
+
+.cover_album_1 {
+    grid-area: cover_album_1;
+    background-image: url("../images/Ale2.jpeg");
+    filter: brightness(.8);
+}
+
+.cover_album_2 h1 {
+    width: 80%;
+    height: fit-content;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+}
+.cover_album_2 h1::before,
+.cover_album_2 h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    aspect-ratio: 4;
+    background: url('../images/medieval_divider.png');
+    background-size: cover;
+}
+
+.cover_album_2 h1::before {
+    top: 0;
+}
+
+.cover_album_2 h1::after {
+    bottom: 0;
+}
+
+.cover_album_2 {
+    grid-area: cover_album_2;
+    background-color: #111;
+    display: grid;
+    place-items: center;
+}
+
+.cover_album_3 {
+    grid-area: cover_album_3;
+    background-image: url("../images/Ale2.jpeg");
+    filter: grayscale(1);
+}
+
+.cover_album_3 h2 {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #111, #111111dd);
+    display: grid;
+    place-items: center;
+    font-size: 2.6rem;
+    font-weight: bolder;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.polaroid {
+    display: inline-block;
+    background: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 300px;
+    transition: .2s ease;
+}
+
+.polaroid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 10px solid white;
+}
+
+.polaroid p {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #111;
+}
+
+.rotate_left {
+    transform: rotate(5deg);
+}
+
+.polaroid:hover {
+    transform: rotate(0deg);
+    scale: 1.1;
+}
+
+.rotate_right {
+    transform: rotate(-5deg);
+}
+
+.memorie {
+    width: 100%;
+    margin: 80px 0;
+}
+
+.memorie_left, .memorie_right {
+    display: flex;
+}
+
+.memorie_right {
+    justify-content: end;
+    text-align: end;
+}
+
+.memorie_right div {
+    flex-direction: row-reverse;
+}
+
+.memorie_cont {
+    display: flex;
+    max-width: 650px;
+    gap: 40px;
+}
+
+.float_in_to_right, .float_in_to_left {
+    opacity: 0;
+    transition: none;
+}
+
+.float_in_to_left {
+    transform: translateX(30%);
+}
+
+.float_in_to_right {
+    transform: translateX(-30%);
+}
+
+@keyframes floatInToRight {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes floatInToLeft {
+    from {
+        transform: translateX(30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.float_in_to_right.animate {
+    animation: floatInToRight 1s ease-out forwards;
+}
+
+.float_in_to_left.animate {
+    animation: floatInToLeft 1s ease-out forwards;
+}
+
+.memorie_text {
+    display: flex;
+    flex-direction: column !important;
+    gap: 20px;
+    color: #fff;
+}
+
+.memorie_text h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: .9;
+}
+
+.memorie_text p {
+    color: #ddd;
+}
+
+.album_footer {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album_footer .nav_item_album a {
+    background-color: #ffffff;
+    padding: 7px 15px;
+    border-radius: 100px;
+    color: #111;
+    text-decoration: none;
+    transition: ease .2s;
+    font-weight: bolder;
+}
+
+.album_footer .nav_item_album a:hover {
+    background-color: #111111;
+    color: #fff;
+}
+
+.album_bg {
+    filter: brightness(.7);
+}
