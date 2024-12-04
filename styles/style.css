@@ -15,11 +15,13 @@ p {
 }
 
 header {
+    width: 100vw;
     overflow: hidden;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 10;
+    overflow-x: hidden;
 }
 
 .layout_80 {

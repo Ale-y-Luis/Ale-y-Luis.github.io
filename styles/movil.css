@@ -37,7 +37,7 @@
   cursor: pointer;
   
   opacity: 0;
-  z-index: 2;
+  z-index: 10;
   
   -webkit-touch-callout: none;
 }
@@ -96,7 +96,7 @@
   max-width: 400px;
   width: 100vw;
   height: calc(100vh + 61px);
-  margin: -100px 0 0 70px;
+  margin: -100px 0 0 60px;
   text-align: end;
   padding-top: 120px;
   overflow-y: auto;
@@ -152,5 +152,12 @@
     }
     .nav_web {
         display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #menu {
+        max-width: none;
+        width: calc(100vw + 10px);
     }
 }
