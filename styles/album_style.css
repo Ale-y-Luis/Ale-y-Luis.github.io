@@ -11,7 +11,7 @@
 }
 
 .cover_album_1, .cover_album_2, .cover_album_3{
-    object-fit: cover;
+    background-size: cover;
 }
 
 .cover_album_1 {
