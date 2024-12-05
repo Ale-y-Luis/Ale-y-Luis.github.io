@@ -42,7 +42,7 @@ header {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    object-position: bottom;
+    object-position: 70%;
     filter: brightness(.7);
     z-index: -1;
 }
@@ -129,8 +129,9 @@ nav {
 .main_inicio {
     width: 100%;
     height: 100%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 .centro_inicio {
@@ -139,7 +140,7 @@ nav {
     max-width: 80%;
     padding: 30px 50px;
     background: #000000cc;
-    transform: translateY(-61px);
+    transform: translateY(-91px);
 }
 
 .frase_inicio {

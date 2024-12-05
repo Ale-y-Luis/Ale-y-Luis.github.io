@@ -16,9 +16,9 @@
 
 .cover_album_1 {
     grid-area: cover_album_1;
-    background-image: url("../images/Ale2.jpeg");
+    background-image: url("../images/Ale4.jpeg");
     filter: brightness(.8);
-    background-position: bottom;
+    background-position: center;
 }
 
 .cover_album_2 h1 {
@@ -58,14 +58,15 @@
 
 .cover_album_3 {
     grid-area: cover_album_3;
-    background-image: url("../images/Ale2.jpeg");
+    background-image: url("../images/Ale5.jpeg");
     filter: grayscale(1);
+    background-position: top;
 }
 
 .cover_album_3 h2 {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #111, #111111dd);
+    background-image: linear-gradient(to bottom, #111, #111111cc);
     display: grid;
     place-items: center;
     font-size: 2.6rem;
