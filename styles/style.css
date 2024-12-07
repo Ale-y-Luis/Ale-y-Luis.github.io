@@ -42,7 +42,6 @@ header {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    object-position: 70%;
     filter: brightness(1);
     z-index: -1;
 }
@@ -55,6 +54,7 @@ header {
     height: 100vh;
     z-index: -1;
     object-fit: cover;
+    filter: brightness(.7);
 }
 
 .general {
@@ -131,7 +131,7 @@ nav {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     background-image: radial-gradient(circle, #00000000, #000000AA);
     transform: translateY(-61px);
 }
@@ -141,16 +141,31 @@ nav {
     min-width: 40%;
     max-width: 80%;
     padding: 30px 50px;
-    background: #000000cc;
-    transform: translateY(-30px);
+}
+
+.title {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title span {
+    font-size: 4rem;
+    
 }
 
 .frase_inicio {
     font-family: 'Dancing Script', cursive;
     font-size: 1.6rem;
     font-style: italic;
-    color: #ffc1d5;
+    color: #eee;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .great_vibes_regular {
@@ -158,6 +173,35 @@ nav {
     font-weight: 400;
     font-style: normal;
 }
+
+p {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quicksand-300 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.quicksand-400 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quicksand-500 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+  
 
 
 /*Stardust*/
@@ -200,5 +244,21 @@ nav {
     100% {
         opacity: 0;
         transform: translate(-50%, -50%) scale(2);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2.2rem;
+    }
+    .title span {
+        font-size: 1.8rem;
+    }
+    .frase_inicio {
+        font-size: 1.6rem;
+    }
+    .bg_image_inicio {
+        filter: brightness(.7);
     }
 }

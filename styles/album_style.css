@@ -24,8 +24,6 @@
 .cover_album_2 h1 {
     width: 80%;
     height: fit-content;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 400;
     font-size: 3.5rem;
     line-height: 1.5;
     text-align: center;
@@ -58,7 +56,7 @@
 
 .cover_album_3 {
     grid-area: cover_album_3;
-    background-image: url("../images/Ale5.jpeg");
+    background-image: url("../images/tapiz1.jpg");
     filter: grayscale(1);
     background-position: top;
 }
@@ -70,7 +68,6 @@
     display: grid;
     place-items: center;
     font-size: 2.6rem;
-    font-weight: bolder;
     padding: 10px 30px;
     color: #fff;
 }
