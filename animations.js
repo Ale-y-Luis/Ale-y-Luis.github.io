@@ -16,8 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observer = new IntersectionObserver(onIntersection, observerOptions);
 
-    const elementsToAnimate = document.querySelectorAll('.float_in_to_right, .float_in_to_left');
+    const elementsToAnimate = document.querySelectorAll(
+        '.float_in_to_right, .float_in_to_left, .float_in_to_top, .float_in_to_bottom, .slide_in'
+    );
+
     elementsToAnimate.forEach(element => {
-        observer.observe(element);
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            element.classList.add('animate');
+        } else {
+            observer.observe(element);
+        }
     });
 });

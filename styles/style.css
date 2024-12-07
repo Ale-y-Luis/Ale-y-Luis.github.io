@@ -43,7 +43,7 @@ header {
     height: 100vh;
     object-fit: cover;
     object-position: 70%;
-    filter: brightness(.7);
+    filter: brightness(1);
     z-index: -1;
 }
 
@@ -132,6 +132,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: end;
+    background-image: radial-gradient(circle, #00000000, #000000AA);
+    transform: translateY(-61px);
 }
 
 .centro_inicio {
@@ -140,7 +142,7 @@ nav {
     max-width: 80%;
     padding: 30px 50px;
     background: #000000cc;
-    transform: translateY(-91px);
+    transform: translateY(-30px);
 }
 
 .frase_inicio {

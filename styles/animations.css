@@ -1,0 +1,114 @@
+/* Animaciones básicas flotantes */
+.float_in_to_right, .float_in_to_left, .float_in_to_top, .float_in_to_bottom {
+    opacity: 0;
+    transition: none;
+}
+
+.float_in_to_left {
+    transform: translateX(30%);
+}
+
+.float_in_to_right {
+    transform: translateX(-30%);
+}
+
+.float_in_to_top {
+    transform: translateY(30%);
+}
+
+.float_in_to_bottom {
+    transform: translateY(-30%);
+}
+
+/* Animaciones desde diferentes direcciones */
+@keyframes floatInToRight {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes floatInToLeft {
+    from {
+        transform: translateX(30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes floatInToTop {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes floatInToBottom {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Efectos de deslizamiento */
+@keyframes slideIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+}
+
+/* Animaciones asignadas */
+.float_in_to_right.animate {
+    animation: floatInToRight 1s ease-out forwards;
+}
+
+.float_in_to_left.animate {
+    animation: floatInToLeft 1s ease-out forwards;
+}
+
+.float_in_to_top.animate {
+    animation: floatInToTop 1s ease-out forwards;
+}
+
+.float_in_to_bottom.animate {
+    animation: floatInToBottom 1s ease-out forwards;
+}
+
+.slide_in.animate {
+    animation: slideIn 1s ease-out forwards;
+}
+
+.slide_out.animate {
+    animation: slideOut 1s ease-out forwards;
+}
