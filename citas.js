@@ -31,8 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const indiceAleatorio = Math.floor(Math.random() * citas.length);
         const citaSeleccionada = citas[indiceAleatorio];
 
+        citaAleatoria.style.display = "flex";
         mostrarCitaLetraPorLetra(citaSeleccionada, citaAleatoria, 50);
-
         botonCita.style.display = "none";
+        
     });
 });

@@ -95,7 +95,7 @@
   position: absolute;
   max-width: 400px;
   width: 100vw;
-  height: calc(100vh + 61px);
+  height: 100vh;
   margin: -100px 0 0 60px;
   text-align: end;
   padding-top: 120px;

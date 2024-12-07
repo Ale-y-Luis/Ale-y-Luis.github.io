@@ -16,17 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-/**
- * @param {string} codigo
- */
-function validarCodigo(codigo) {
+function validarCodigo() {
+    const codigoInput = document.getElementById('codigo_secreto').value;
     const codigoCorrecto = "12345";
 
-    if (codigo === codigoCorrecto) {
+    if (codigoInput === codigoCorrecto) {
         sessionStorage.setItem("sesionValida", "true");
         alert("Bienvenida amor mío ❤️");
         window.location.href = "inicio.html";
+        return false; // Previene el comportamiento por defecto después de redirigir
     } else {
         alert("¿Quién eres? ¿Un espía? ¿Para quién? 👊");
+        return false; // Evita el envío del formulario
     }
 }

@@ -9,16 +9,20 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Great+Vibes&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Dots&display=swap');</style>
 </head>
 <body class="inicio">
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>    
     <img src="./images/bg1.jpg" alt="" class="bg_image_inicio">
     <main class="main_login">
         <section class="centro_login">
-            <form action="" class="login">
-                <label for="codigo" class="great_vibes_regular">Código secreto</label>
-                <input type="password" name="codigo" id="codigo_secreto" placeholder="Introduce el código">
-                <button class="stardust great_vibes_regular">Ingresar</button>
-            </form>
+            <form action="#" class="login" onsubmit="return validarCodigo()">
+                <label for="codigo_secreto" class="great_vibes_regular">Código secreto</label>
+                <input type="password" id="codigo_secreto" placeholder="Introduce el código">
+                <input type="submit" value="Ingresar" class="stardust great_vibes_regular">
+            </form>                      
         </section>
     </main>
     <script src="./codigo.js"></script>
+    <script src="./preloader.js"></script>
 </body>
 </html>

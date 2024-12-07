@@ -1,7 +1,6 @@
 .cover_album {
     width: 100%;
     height: 100vh;
-    transform: translateY(-61px);
     display: grid;
     grid-template-areas:
         "cover_album_1 cover_album_2"
@@ -185,7 +184,6 @@
         text-align: left;
     }
     .cover_album {
-        transform: translateY(-61px);
         display: grid;
         grid-template-areas:
             "cover_album_1"
