@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/contrato.css">
+    <link rel="stylesheet" href="./styles/movil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Contrato</title>
     <script>
@@ -21,13 +22,56 @@
     <div id="preloader">
         <div class="spinner"></div>
     </div>    
-    <header>
-        <nav>
-            <div class="nav_item_inicio">
-                <a href="./inicio.html"><i class="fas fa-home"></i></a>
+    <!-- Nav Web -->
+    <header class="nav_web">
+        <nav class="nav_inicio nav_web">
+            <div class="nav_left">
+                <div class="nav_item"><a href="./album2024.html">Álbum digital</a></div>
+                <div class="nav_item"><a href="./historia.html">Historia</a></div>
+            </div>
+            <div class="nav_item_inicio"><a href="./inicio.html"><i class="fas fa-home"></i></a></div>
+            <div class="nav_right">
+                <div class="nav_item"><a href="./contrato.html">Contrato</a></div>
+                <div class="nav_item"><a href="./citas.html">Selector de citas</a></div>
             </div>
         </nav>
     </header>
+    <!-- Nav Móvil -->
+    <nav role="navigation" class="nav_mobile">
+        <div id="menuToggle">
+            <input type="checkbox" id="menuCheckbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+            <li>
+                <a href="./inicio.html">
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="./album2024.html">
+                Álbum digital
+                </a>
+            </li>
+            <li>
+                <a href="./historia.html">
+                    Historia
+                </a>
+            </li>
+            <li class="activo">
+                <a href="./contrato.html">
+                    Contrato
+                </a>
+            </li>
+            <li>
+                <a href="./citas.html">
+                    Selector de citas
+                </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
     <main class="main_contrato">
         <img src="./images/contrato.jpg" class="contrato" alt="">
     </main>

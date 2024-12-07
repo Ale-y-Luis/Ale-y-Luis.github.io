@@ -96,7 +96,7 @@
   max-width: 400px;
   width: 100vw;
   height: 100vh;
-  margin: -100px 0 0 60px;
+  margin: -100px 0 0 0;
   text-align: end;
   padding-top: 120px;
   overflow-y: auto;
@@ -106,7 +106,7 @@
   -webkit-font-smoothing: antialiased;
   
   transform-origin: 0% 0%;
-  transform: translate(0, 0);
+  transform: translate(60px, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
@@ -128,7 +128,7 @@
 
 #menuToggle input:checked ~ ul
 {
-  transform: translate(-100%, 0);
+  transform: translate(calc(-100% + 60px), 0);
 }
 
 
@@ -143,6 +143,7 @@
 
 
 .nav_mobile {
+  position: absolute;
     display: none;
 }
 

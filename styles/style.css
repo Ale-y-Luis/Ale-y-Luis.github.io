@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -15,7 +16,7 @@ p {
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -30,7 +31,7 @@ header {
 }
 
 .inicio {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
 }
@@ -39,7 +40,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
     filter: brightness(1);
@@ -50,7 +51,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     z-index: -1;
     object-fit: cover;
