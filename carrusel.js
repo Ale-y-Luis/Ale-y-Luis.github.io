@@ -1,9 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const imagePaths = [
-        './images/Ale5.jpeg',
-        './images/Ale2.jpeg',
-        './images/Ale3.jpeg',
-        './images/Ale4.jpeg'
+        './images/bg1.jpg',
+        './images/bg2.jpg',
+        './images/bg3.jpg',
+        './images/bg4.jpg',
+        './images/bg5.jpg',
+        './images/bg6.jpg',
+        './images/bg7.jpg',
+        './images/bg8.jpg',
+        './images/bg9.jpg',
+        './images/bg10.jpg',
     ];
 
     const randomImage = imagePaths[Math.floor(Math.random() * imagePaths.length)];
