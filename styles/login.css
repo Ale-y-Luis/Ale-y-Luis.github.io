@@ -5,17 +5,17 @@
 }
 
 .centro_login {
-    max-width: 300px;
-    padding: 50px;
-    background-color: #000000aa;
-    backdrop-filter: blur(3px);
-    border: 1px solid #555;
-    border-radius: 20px;
+    width: 400px;
+    padding: 40px 60px;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 .login {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,33 +24,57 @@
 .login label {
     color: #fff;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
-.login input {
-    margin: 10px 0;
+.login input[type="password"] {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px 15px;
     background: none;
-    border: 1px solid #ccc;
-    padding: 15px 10px;
+    border: 1px solid #555;
     color: #fff;
-    border-radius: 10px;
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login input[type="password"]:focus {
+    border-color: #ffb3c1;
+    box-shadow: 0 0 10px rgba(255, 179, 193, 0.5);
 }
 
 input[type="submit"] {
-    position: relative;
-    font-size: 1rem;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     color: #111;
-    background: linear-gradient(135deg, #ffc1d5, #ffc1d5ee);
+    background: linear-gradient(135deg, #ffb3c1, #ff9eb9);
     border: none;
-    width: fit-content;
-    padding: 0.4rem 1.5rem;
-    border-radius: 50px;
+    padding: 0.5rem 2rem;
     cursor: pointer;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    transition: .3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #e5e5e7, #fff);
 }
 
 input[type="submit"]:active {
-    transform: scale(0);
+    transform: scale(0.95);
 }

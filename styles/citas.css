@@ -24,7 +24,6 @@ body {
     height: 100%;
     padding: 40px;
     background-image: radial-gradient(circle, #00000077, #000000aa);
-    backdrop-filter: blur(1px);
     display: grid;
     place-items: center;
 }

@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
@@ -126,8 +130,8 @@ nav {
 }
 
 .nav_item_inicio a:hover {
-    background-color: #ffc1d5;
-    color: #bb4067;
+    background-color: #F05757;
+    color: #fff;
     transform: translateY(-3px);
 }
 
@@ -146,6 +150,13 @@ nav {
     max-width: 80%;
     padding: 30px 50px;
 }
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #fff
+}
+
 
 .title {
     margin-top: 10px;

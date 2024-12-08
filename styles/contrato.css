@@ -4,7 +4,6 @@ header {
 
 .main_contrato {
     width: 100%;
-    padding: 120px 10%;
     display: flex;
     justify-content: center;
     background-image: url("../images/tapiz1.jpg");
@@ -12,6 +11,18 @@ header {
     background-size: cover;
 }
 
+section {
+    width: 100%;
+    padding: 120px 10%;
+    background-image: radial-gradient(circle, #00000099, #00000077);
+}
+
 .contrato {
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 80px 5%;
+    }
 }
