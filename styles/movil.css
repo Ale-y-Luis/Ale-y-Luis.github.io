@@ -96,9 +96,9 @@
   max-width: 400px;
   width: 100vw;
   height: 100vh;
-  margin: -100px 0 0 0;
+  margin: -47px 0 0 0;
   text-align: end;
-  padding-top: 120px;
+  padding-top: 60px;
   overflow-y: auto;
   background: #00000077;
   backdrop-filter: blur(3px);
@@ -149,7 +149,7 @@
 
 @media (max-width: 900px) {
     .nav_mobile {
-        display: flex;
+        display: block;
     }
     .nav_web {
         display: none;
