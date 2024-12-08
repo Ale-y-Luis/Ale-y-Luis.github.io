@@ -208,8 +208,12 @@
     .cover_album_2 h1 {
         font-size: 2rem;
     }
+    .memorie {
+        margin-bottom: 160px;
+    }
     .memorie_cont {
         flex-direction: column !important;
         text-align: left;
+        gap: 70px;
     }
 }

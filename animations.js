@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(onIntersection, observerOptions);
 
     const elementsToAnimate = document.querySelectorAll(
-        '.float_in_to_right, .float_in_to_left, .float_in_to_top, .float_in_to_bottom, .slide_in'
+        '.float_in_to_right, .float_in_to_left, .float_in_to_top, .float_in_to_bottom, .float_to_top_small, .slide_in'
     );
 
     elementsToAnimate.forEach(element => {

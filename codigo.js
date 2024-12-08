@@ -18,15 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function validarCodigo() {
     const codigoInput = document.getElementById('codigo_secreto').value;
-    const codigoCorrecto = "12345";
+    const codigoCorrecto = "12/01/2025";
 
     if (codigoInput === codigoCorrecto) {
         sessionStorage.setItem("sesionValida", "true");
         alert("Bienvenida amor mío ❤️");
         window.location.href = "inicio.html";
-        return false; // Previene el comportamiento por defecto después de redirigir
+        return false;
     } else {
         alert("¿Quién eres? ¿Un espía? ¿Para quién? 👊");
-        return false; // Evita el envío del formulario
+        return false;
     }
 }

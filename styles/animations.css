@@ -1,5 +1,5 @@
 /* Animaciones básicas flotantes */
-.float_in_to_right, .float_in_to_left, .float_in_to_top, .float_in_to_bottom {
+.float_in_to_right, .float_in_to_left, .float_in_to_top, .float_in_to_bottom, .float_to_top_small {
     opacity: 0;
     transition: none;
 }
@@ -88,6 +88,17 @@
     }
 }
 
+@keyframes floatToTopSmall {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+
 /* Animaciones asignadas */
 .float_in_to_right.animate {
     animation: floatInToRight 1s ease-out forwards;
@@ -111,4 +122,8 @@
 
 .slide_out.animate {
     animation: slideOut 1s ease-out forwards;
+}
+
+.float_to_top_small.animate {
+    animation: floatToTopSmall 1s ease-out forwards;
 }

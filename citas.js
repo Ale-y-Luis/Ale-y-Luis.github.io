@@ -3,16 +3,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const citaAleatoria = document.getElementById("cita_aleatoria");
 
     const citas = [
-        "El amor no se mira, se siente, y aún más cuando ella está junto a ti.",
-        "Cada vez que te miro, me doy cuenta de que mi vida se llena de sentido.",
-        "A tu lado, incluso los días más grises tienen colores brillantes.",
-        "El amor no tiene fecha de caducidad, y el mío por ti será eterno.",
-        "Eres la razón por la que mis mañanas son más felices.",
-        "El verdadero amor no es otra cosa que el deseo de ayudar al otro a ser quien es.",
-        "Nada en este mundo es tan perfecto como verte sonreír.",
-        "Si el amor fuera un sueño, tú serías el más hermoso que he tenido.",
-        "Contigo, todo es mejor, incluso lo más simple se vuelve extraordinario.",
-        "Estar a tu lado es mi lugar favorito en el mundo."
+        "Pasear con scooters en Causway",
+        "Caminar por un parque",
+        "Go Carts en Causway",
+        "Laser-Tag",
+        "Paseo en bicicleta",
+        "Coffee bar",
+        "Probar un restaurante nuevo",
+        "Tarde de picnic",
+        "Noche caliente",
+        "Cine en casa",
+        "Cena elegante",
+        "Cena normal",
+        "Noche de juegos",
+        "Visita a un museo",
+        "Escalada del Cerro Ancón",
+        "Ida al cine"
     ];
 
     const mostrarCitaLetraPorLetra = (texto, elemento, velocidad) => {
