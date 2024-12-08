@@ -72,6 +72,10 @@
     color: #fff;
 }
 
+.main_album {
+    overflow-x: hidden;
+}
+
 .polaroid {
     display: inline-block;
     background: white;
@@ -86,6 +90,8 @@
 .polaroid img {
     display: block;
     width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
     height: auto;
     border-bottom: 10px solid white;
 }

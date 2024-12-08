@@ -51,9 +51,11 @@
 
 .flex_cont img {
     max-width: 400px;
-    box-shadow: 3px 3px 10px #000000cc;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
     margin-bottom: 30px;
-    box-shadow: 7px 7px #ccc;
+    box-shadow: 7px 7px 1rem #000000cc;
+    border-radius: 0 2rem;
 }
 
 .flex_cont p {
