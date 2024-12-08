@@ -78,3 +78,9 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
     transform: scale(0.95);
 }
+
+@media (max-width: 600px) {
+    .centro_login {
+        width: 90%;
+    }
+}
