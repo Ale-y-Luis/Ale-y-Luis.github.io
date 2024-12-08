@@ -2,6 +2,7 @@
     width: 100%;
     height: 100vh;
     display: grid;
+    background: #111;
     grid-template-areas:
         "cover_album_1 cover_album_2"
         "cover_album_1 cover_album_3";
@@ -179,17 +180,30 @@
 
 
 @media (max-width: 900px) {
-    .memorie_cont {
-        flex-direction: column !important;
-        text-align: left;
-    }
     .cover_album {
+        height: fit-content;
         display: grid;
         grid-template-areas:
             "cover_album_1"
             "cover_album_2"
             "cover_album_3";
         grid-template-columns: 1fr;
-        grid-template-rows: 3fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .cover_album_2 h1 {
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .cover_album {
+        height: 100vh;
+    }
+    .cover_album_2 h1 {
+        font-size: 2rem;
+    }
+    .memorie_cont {
+        flex-direction: column !important;
+        text-align: left;
     }
 }
