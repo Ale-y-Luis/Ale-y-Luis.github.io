@@ -22,7 +22,7 @@ function validarCodigo() {
 
     if (codigoInput === codigoCorrecto) {
         sessionStorage.setItem("sesionValida", "true");
-        alert("Bienvenida amor mío ❤️");
+        alert("Bienvenida, amor mío ❤️");
         window.location.href = "inicio.html";
         return false;
     } else {
