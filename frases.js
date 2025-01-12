@@ -1,7 +1,7 @@
 // Arreglo de frases
 const frases = [
-    "El amor verdadero no es fácil, pero siempre vale la pena. – Missandei",
-    "Eres la luna de mi vida. – Khal Drogo",
+    "El amor verdadero no es fácil, pero siempre vale la pena",
+    "You are the moon of my life",
     "Te amo",
     "Tú en mi vida encajas",
     "Eres tan perfecta",
@@ -12,8 +12,7 @@ const frases = [
     "¿Aló? ¿Pocilía?",
     "Me haces reír de forma tan natural",
     "El silencio contigo es mi canción favorita",
-    "Elegiste el amor, y no hay nada más poderoso en este mundo. – Tyrion Lannister",
-    "El amor nos da algo por lo que luchar. – Jon Snow",
+    "El amor nos da algo por lo que luchar",
     "Peshioshaaaaaa!!!",
     "Hemoshaaaaaaaa!!!",
     "Te elijo a ti",
@@ -41,17 +40,15 @@ const frases = [
     "Eres mi sol en los días nublados",
     "Solo tú sabes hacerme sentir tan completo",
     "Gracias por ser tú, por ser nosotros",
-    "Eres lo único que me importa ahora, lo único que siempre me ha importado. – Edward Cullen",
-    "No tengas miedo: naciste para estar conmigo. – Edward Cullen",
-    "¿Quieres que ponga mi mundo patas arriba para que podamos estar juntos? Haría eso y más por ti. – Bella Swan",
-    "De alguna forma me has convertido en algo mejor de lo que era. – Edward Cullen",
-    "Eres mi vida ahora. – Edward Cullen",
-    "Nadie ha amado a alguien tanto como yo te amo a ti. Es una imposibilidad matemática. – Edward Cullen",
-    "Tal vez estoy soñando despierto. – Sebastian Wilder",
-    "Aquí está el caos de las estrellas. – Mia Dolan",
-    "Todas las noches, estás conmigo. – Sebastian Wilder",
-    "Me encantan tus ojos. Y también amo el resto de tu cara. – Tim Lake",
-    "El presente es extraordinario si lo eliges. – Tim Lake",
+    "Eres lo único que me importa ahora, lo único que siempre me ha importado",
+    "No tengas miedo: naciste para estar conmigo",
+    "De alguna forma me has convertido en algo mejor de lo que era",
+    "Eres mi vida ahora",
+    "Tal vez estoy soñando despierto",
+    "Todas las noches, estás conmigo",
+    "Me encantan tus ojos. Y también amo el resto de tu cara",
+    "En estos momentos, te extraño...",
+    "Eres lo mejor que me ha pasado"
 ];
 
 const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
