@@ -16,7 +16,6 @@
 
 .cover_album_1 {
     grid-area: cover_album_1;
-    background-image: url("../images/Ale4.jpeg");
     filter: brightness(.8);
     background-position: center;
 }
@@ -160,8 +159,28 @@
 .album_footer {
     height: 60px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.album_footer #activo {
+    cursor: default;
+    background-color: #1d1d1f;
+    color: #f5f5f7;
+}
+
+.album_footer #activo:hover {
+    cursor: default;
+    background-color: #1d1d1f;
+    color: #f5f5f7;
+}
+
+.album_footer .nav_item_album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .album_footer .nav_item_album a {

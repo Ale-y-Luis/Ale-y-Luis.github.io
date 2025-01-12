@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/album_style.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="./styles/movil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Great+Vibes&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Dots&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Great+Vibes&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Zen+Dots&display=swap');</style>
+    <title>Álbum digital</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (sessionStorage.getItem("sesionValida") !== "true") {
+                window.location.href = "index.html";
+            }
+        });
+    </script>
+</head>
+<body class="general">
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>    
+    <img src="./images/album_ale_bg_1.jpg" alt="" class="fixed_bg album_bg">
+    <!-- Nav Web -->
+    <header class="nav_web">
+        <nav class="nav_inicio nav_web">
+            <div class="nav_left">
+                <div class="nav_item"><a href="./album2024.html">Álbum digital</a></div>
+                <div class="nav_item"><a href="./historia.html">Historia</a></div>
+            </div>
+            <div class="nav_item_inicio"><a href="./inicio.html"><i class="fas fa-home"></i></a></div>
+            <div class="nav_right">
+                <div class="nav_item"><a href="./contrato.html">Contrato</a></div>
+                <div class="nav_item"><a href="./citas.html">Selector de citas</a></div>
+            </div>
+        </nav>
+    </header>
+    <!-- Nav Móvil -->
+    <nav role="navigation" class="nav_mobile">
+        <div id="menuToggle">
+            <input type="checkbox" id="menuCheckbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+            <li>
+                <a href="./inicio.html">
+                    Inicio
+                </a>
+            </li>
+            <li class="activo">
+                <a href="./album2024.html">
+                    Álbum digital
+                </a>
+            </li>
+            <li>
+                <a href="./historia.html">
+                    Historia
+                </a>
+            </li>
+            <li>
+                <a href="./contrato.html">
+                    Contrato
+                </a>
+            </li>
+            <li>
+                <a href="./citas.html">
+                    Selector de citas
+                </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main_album">
+        <section class="cover_album">
+            <div class="cover_album_1" style="background-image: url('../images/Date8.jpeg');"></div>
+            <!--Título-->
+            <div class="cover_album_2"><h1 class="quicksand-400">NUESTRO FELIZ COMIENZO</h1></div>
+            <!--Año-->
+            <div class="cover_album_3"><h2 class="stardust quicksand-300">2025</h2></div>
+        </section>
+        <footer class="album_footer">
+            <br><br>
+            <div class="nav_item_album">
+                <a href="./album2024.html">2024</a>
+                <a id="activo">2025</a>
+            </div>
+        </footer>
+        <section class="album layout_80">
+            <!--Memorie L-->
+            <div class="memorie float_in_to_right">
+                <div class="memorie_left">
+                    <div class="memorie_cont">
+                        <div class="polaroid rotate_left">
+                            <img src="./images/Date8.jpeg" alt="">
+                            <p>05/01/2025</p>
+                        </div>
+                        <div class="memorie_text">
+                            <!--Titulo-->
+                            <h3 class="great_vibes_regular">Impulsive shopping!</h3>
+                            <!--Descripcion-->
+                            <p>
+                                Qué difícil es ahorrar...
+                            </p> 
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <!--Memorie R-->
+            <div class="memorie float_in_to_left">
+                <div class="memorie_right">
+                    <div class="memorie_cont">
+                        <div class="polaroid rotate_right">
+                            <img src="./images/Date9.1.jpeg" alt="">
+                            <p>11/01/2025</p>
+                        </div>
+                        <div class="memorie_text">
+                            <!--Titulo-->
+                            <h3 class="great_vibes_regular">Mantenimiento</h3>
+                            <!--Descripcion-->
+                            <p>
+                                Cambio de aceite gracias a mi prima la mecánica.
+                            </p> 
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <!--Memorie L-->
+            <div class="memorie float_in_to_right">
+                <div class="memorie_left">
+                    <div class="memorie_cont">
+                        <div class="polaroid rotate_left">
+                            <img src="./images/Date9.2.jpeg" alt="">
+                            <p>11/01/2025</p>
+                        </div>
+                        <div class="memorie_text">
+                            <!--Titulo-->
+                            <h3 class="great_vibes_regular">La casa del yeyesito</h3>
+                            <!--Descripcion-->
+                            <p>
+                                ...
+                            </p> 
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <!--Memorie R-->
+            <div class="memorie float_in_to_left">
+                <div class="memorie_right">
+                    <div class="memorie_cont">
+                        <div class="polaroid rotate_right">
+                            <img src="./images/Date9.3.jpeg" alt="">
+                            <p>11/01/2025</p>
+                        </div>
+                        <div class="memorie_text">
+                            <!--Titulo-->
+                            <h3 class="great_vibes_regular">Birria de billar</h3>
+                            <!--Descripcion-->
+                            <p>
+                                Le gané (somos malísimos).
+                            </p> 
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <!---->
+        </section>
+        <footer class="album_footer">
+            <div class="nav_item_album">
+                <a href="./album2024.html">2024</a>
+                <a id="activo">2025</a>
+            </div>
+            <br><br>
+        </footer>
+    </main>
+    <script src="./animations.js"></script>
+    <script src="./preloader.js"></script>
+</body>
+</html>
